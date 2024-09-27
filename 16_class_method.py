@@ -25,7 +25,7 @@ class employee:
 
     @staticmethod    
     def greet():
-        print("hllo harshit")    
+        print("""hllo h"arshit""")    
     
 mohan = employee("tiger",1234)
 # mohan.cast = "jaat"
