@@ -1,5 +1,0 @@
-f = open("testMysql.py", "r")
-data = f.read(100)
-print(data)
-print(type(data))
-f.close()
