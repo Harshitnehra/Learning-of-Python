@@ -1,6 +1,18 @@
-fist = "harshit"
-last ="nehra"
+userage = int(input("give me a number"))
+day = input("enter your day")
 
-order = "{} {} ia a good boy"
 
-print(order.format(fist, last))
+if userage <= 17:
+  prise = 8
+  if day == "wed":
+    print(prise-2)
+  print(prise)
+else:
+  prise = 12
+  if day == "wed":
+    print(prise-2)
+  print(prise)
+   
+
+
+
