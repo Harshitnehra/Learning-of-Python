@@ -1,18 +1,10 @@
-userage = int(input("give me a number"))
-day = input("enter your day")
+import math
 
+def circle_stats(radius):
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+    return area, circumference
 
-if userage <= 17:
-  prise = 8
-  if day == "wed":
-    print(prise-2)
-  print(prise)
-else:
-  prise = 12
-  if day == "wed":
-    print(prise-2)
-  print(prise)
-   
-
-
-
+a, c = circle_stats(3)
+print(circle_stats(3))
+print("Area: ", round(a,3), "Circumference: ", c)
