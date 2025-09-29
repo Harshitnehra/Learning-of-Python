@@ -1,11 +1,5 @@
-low = int(input("enter a num ")) 
-upper = int(input("enter a num1 ")) 
+import calendar
 
-for num in range(low , upper):
-      if num > 1:
-            for i in range(2 , num):
-                  if num % i == 0:
-                        print("not prime", num)
-                        break         
-            else:
-                  print(num)
+print(calendar.month(12366576576547645,4))
+
+# fjxhcbykuhsfbxv,j
