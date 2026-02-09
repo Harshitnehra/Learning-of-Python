@@ -1,0 +1,111 @@
+.app {
+  min-height: 100vh;
+}
+.nav {
+  background: #1a1a2e;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.api-status {
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+.api-status.connected { color: #6f6; }
+.api-status.disconnected { color: #f66; }
+.main code {
+  background: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.error {
+  color: #c00;
+  background: #ffe0e0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.form input, .form select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form button {
+  padding: 0.5rem 1rem;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form button:hover:not(:disabled) { opacity: 0.9; }
+.form button:disabled { opacity: 0.6; cursor: not-allowed; }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.table th, .table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.table th { background: #1a1a2e; color: #fff; }
+.table tbody tr:hover { background: #f9f9f9; }
+.btn-danger {
+  padding: 0.35rem 0.75rem;
+  background: #c00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.btn-danger:hover { background: #a00; }
+.page .section { margin-bottom: 2rem; }
+.page .section h2 { font-size: 1.15rem; margin-bottom: 0.25rem; }
+.page .hint { color: #666; font-size: 0.9rem; margin-bottom: 0.75rem; }
+.page .form label { display: flex; flex-direction: column; gap: 0.25rem; }
+.page .form label span { font-size: 0.9rem; font-weight: 500; }
+.filter { margin-bottom: 1rem; }
+.filter label { display: flex; align-items: center; gap: 0.5rem; }
+.filter select, .filter input { padding: 0.35rem 0.5rem; min-width: 200px; }
+
+.confirm-box {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+.confirm-box p { margin: 0 0 0.5rem 0; }
+.confirm-box p:last-of-type { color: #666; font-size: 0.95rem; }
+.confirm-actions { display: flex; gap: 0.75rem; margin-top: 1rem; }
+.confirm-actions button { padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; border: 1px solid #ccc; background: #fff; }
+.confirm-actions button.btn-danger { border-color: #c00; background: #c00; color: #fff; }
