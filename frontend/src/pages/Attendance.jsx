@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { api, fetchApi } from '../api'
 
 function formatDate(val) {
-  if (!val) return '–'
+  if (!val) return ''
   if (typeof val === 'string') return val.slice(0, 10)
   return val
 }
@@ -121,7 +121,7 @@ export default function Attendance() {
             >
               <option value="">All employees</option>
               {employees.map((e) => (
-                <option key={e.id} value={e.employee_id}>{e.employee_id} – {e.full_name}</option>
+                <option key={e.id} value={e.employee_id}>{e.employee_id} {e.full_name}</option>
               ))}
             </select>
           </label>
@@ -144,7 +144,7 @@ export default function Attendance() {
                 <tr key={r.id}>
                   <td>{formatDate(r.date)}</td>
                   <td>{r.employee_code || r.employee_id}</td>
-                  <td>{r.employee_name || '–'}</td>
+                  <td>{r.employee_name }</td>
                   <td>{r.status}</td>
                 </tr>
               ))}

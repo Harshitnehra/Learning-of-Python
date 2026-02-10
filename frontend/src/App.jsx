@@ -92,7 +92,7 @@ function Home({ apiConnected }) {
                 <td>{emp.employee_id}</td>
                 <td>{emp.full_name}</td>
                 <td>{emp.email}</td>
-                <td>{emp.department || '–'}</td>
+                <td>{emp.department}</td>
               </tr>
             ))}
           </tbody>
