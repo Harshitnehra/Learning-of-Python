@@ -155,3 +155,5 @@ export default function Attendance() {
     </div>
   )
 }
+
+// its attendance.jsx file
