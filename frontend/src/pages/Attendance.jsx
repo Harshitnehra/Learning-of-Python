@@ -102,8 +102,8 @@ export default function Attendance() {
               value={form.status}
               onChange={(e) => setForm((f) => ({ ...f, status: e.target.value }))}
             >
-              <option value="Present">Present</option>
-              <option value="Absent">Absent</option>
+              <option value="Present">present</option>
+              <option value="Absent">absent</option>
             </select>
           </label>
           <button type="submit" disabled={saving}>{saving ? 'Saving…' : 'Mark Attendance'}</button>
