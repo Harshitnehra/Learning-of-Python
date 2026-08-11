@@ -83,3 +83,13 @@
 # Q31. How dictionary works internally?
 # Dictionary uses
 # Hash Table
+
+
+s = "programming"
+
+frequency = {}
+
+for char in s:
+    frequency[char] = frequency.get(char, 0) + 1
+
+print(frequency)
