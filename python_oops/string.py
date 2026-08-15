@@ -10,7 +10,19 @@
 
 # If same hash + same value
 # Ignored.
-
+User Question
+      ↓
+Create Embedding
+      ↓
+Search Vector DB
+      ↓
+Get Relevant Documents
+      ↓
+Create Prompt
+      ↓
+Send to LLM
+      ↓
+Generate Answer
 # Q22. How does membership become O(1)?
 # Hash table.
 # Instead of scanning
