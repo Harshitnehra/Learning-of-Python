@@ -195,3 +195,40 @@ Legend: 🔴 MUST PREPARE · 🟠 HIGH PRIORITY · 🟡 SHOULD PREPARE · 🟢 L
 - Medium: Write a generator that yields Fibonacci numbers infinitely with a `next()` demo.
 - Interview-level: Implement an LRU cache from scratch (dict + doubly linked list) — very common in AI/backend interviews. 🔥
 - Interview-level: Flatten a nested list/dict using recursion and generators.
+
+
+                    USER
+                      │
+                      ↓
+                  PROMPT
+                      │
+                      ↓
+                ┌───────────┐
+                │   MODEL   │
+                └───────────┘
+                      ↑
+                      │
+                 Retrieved
+                  Context
+                      ↑
+                      │
+              ┌──────────────┐
+              │  RETRIEVER   │
+              └──────────────┘
+                      ↑
+                      │
+                VECTOR STORE
+                      ↑
+                      │
+                  INDEXING
+                      ↑
+                      │
+              PDF → CHUNKS
+                      
+                     
+
+MEMORY → Conversation History
+
+AGENT → Decides which tools/actions to use
+
+CALLBACKS → Monitor what's happening
